@@ -1,0 +1,32 @@
+# 忽略：
+# 虛擬環境 venv-da/
+# 資料資料夾 data/
+# Notebook 暫存檔 .ipynb_checkpoints/
+# 系統與 IDE 設定檔（例如 .DS_Store, .vscode）
+
+# 🐍 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📦 虛擬環境
+venv*/
+.env/
+.venv/
+
+# 📊 資料檔（可根據專案調整）
+data/
+*.csv
+*.xlsx
+*.json
+*.parquet
+
+# 💻 Jupyter Notebook 自動產生的暫存檔
+.ipynb_checkpoints/
+
+# 🧰 VS Code 設定
+.vscode/
+
+# 🖥 macOS 系統檔
+.DS_Store
