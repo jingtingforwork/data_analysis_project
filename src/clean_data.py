@@ -1,4 +1,7 @@
 def clean_data(df):
+    '''
+    填補 dataframe 缺失值
+    '''
     import pandas as pd
 
     ## 填補 float 缺失值
@@ -20,9 +23,6 @@ def clean_data(df):
     # 用「眾數」填補缺失值
     df['Gender'] = df['Gender'].fillna(new_Gender)
     df['Workout_Type'] = df['Workout_Type'].fillna(new_Workout_Type)
-
-    # 另存整理好的datafram
-    df.to_csv('/Users/jingting/Documents/GitHub/data_analysis_project/data/cleaned_data.csv', index=False)
 
     return df
 
