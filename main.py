@@ -10,7 +10,7 @@ def main():
 
     print("開始資料清理...")
     df_clean = clean_data(df_raw)
-    print("資料清理完成")
+    print(f"資料清理完成，筆數：{len(df_clean)}")
 
     print("儲存清理後資料...")
     # output_path = '/Users/jingting/Documents/GitHub/data_analysis_project/data/cleaned_data.csv'
@@ -21,6 +21,8 @@ def main():
 
     df_clean.to_csv(output_path, index=False)
     print(f"清理後資料已儲存：{output_path}")
+
+    return df_clean
 
 if __name__ == "__main__":
     main()
