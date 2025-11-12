@@ -24,6 +24,13 @@ def clean_data(df):
     df['Gender'] = df['Gender'].fillna(new_Gender)
     df['Workout_Type'] = df['Workout_Type'].fillna(new_Workout_Type)
 
+    # df['Workout_Type'] = df['Workout_Type'].str.replace('\n', '').str.replace('\t', '')
+
+    # 只保留合法值
+    valid_types = ["Strength", "Cardio", "Yoga", "HIIT"]
+    df = df[df['Workout_Type'].isin(valid_types)].reset_index(drop=True)
+
+
     return df
 
 
