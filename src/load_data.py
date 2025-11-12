@@ -27,7 +27,7 @@ def load_data():
     if csv_files:
         # 讀取第一個 CSV 檔案
         csv_path = os.path.join(raw_data_path, csv_files[0])
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_path, engine="python") # engine="python" 對於換行字元的容忍度更高
         return df
     else:
         print("找不到 CSV 檔案")
