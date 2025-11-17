@@ -2,6 +2,9 @@ from src.load_data import load_data
 from src.clean_data import clean_data
 
 def main():
+    '''
+    利用kaggle API下載最新dataset，自動轉成dataframe後填補缺失值
+    '''
     import os
 
     print("開始資料下載...")
@@ -25,4 +28,4 @@ def main():
     return df_clean
 
 if __name__ == "__main__":
-    main()
+    df_clean = main()

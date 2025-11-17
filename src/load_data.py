@@ -12,7 +12,9 @@ def load_data():
     api.authenticate()
 
     # 資料集 ID
-    dataset = "nadeemajeedch/fitness-tracker-dataset"
+    #dataset = "nadeemajeedch/fitness-tracker-dataset"
+    dataset = "valakhorasani/gym-members-exercise-dataset"
+
 
     # 指定下載路徑
     raw_data_path = "/Users/jingting/Documents/GitHub/data_analysis_project/data/raw"
